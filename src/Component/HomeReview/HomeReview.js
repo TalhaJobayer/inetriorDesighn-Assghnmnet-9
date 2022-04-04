@@ -1,10 +1,10 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+
 import './HomeReview.css'
 
 
 const HomeReview = (props) => {
-    const  { image,text,first_name,Rating }=props. singelReviews
+    const  { image,text,first_name,Rating }=props.singelReviews
     return (
        
         <div className='reviewInfo'>
