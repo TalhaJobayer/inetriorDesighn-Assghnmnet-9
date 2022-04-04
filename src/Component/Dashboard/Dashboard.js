@@ -12,9 +12,11 @@ const Dashboard = () => {
     },[])
 
     return (
-        <>
+        <div>
+        <div className='chart-container'>
+            
         <div className='chart1'>
-          <BarChart width={720} height={250} data={chart}>
+          <BarChart width={500} height={250} data={chart}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="month" />
   <YAxis />
@@ -24,8 +26,8 @@ const Dashboard = () => {
   <Bar dataKey="revenue" fill="#82ca9d" />
 </BarChart>
         </div >
-        <div>
-        <ComposedChart width={730} height={250} data={chart}>
+        <div className='chart2'>
+        <ComposedChart width={500} height={250} data={chart}>
   <XAxis dataKey="month" />
   <YAxis />
   <Tooltip />
@@ -36,13 +38,21 @@ const Dashboard = () => {
   <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
 </ComposedChart>
         </div>
-        <div>
-        <PieChart width={730} height={250}>
-  <Pie data={chart} dataKey="value" nameKey="revenue" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-  <Pie data={chart} dataKey="value" nameKey="investment" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
-</PieChart>
         </div>
-        </>
+        <div>
+        <LineChart width={730} height={250} data={chart}
+  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+  <CartesianGrid strokeDasharray="3 3" />
+  <XAxis dataKey="month" />
+  <YAxis />
+  <Tooltip />
+  <Legend />
+  <Line type="monotone" dataKey="revenue" stroke="#8884d8" />
+  <Line type="monotone" dataKey="investment" stroke="#82ca9d" />
+</LineChart>
+        </div>
+        
+        </div>
     );
 };
 
