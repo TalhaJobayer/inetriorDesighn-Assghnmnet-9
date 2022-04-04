@@ -12,7 +12,8 @@ const Header = () => {
            <nav className='menu2' >
                <Link  to='/' > Home</Link>
                <Link  to='/Review' > Review</Link>
-               <Link to='/Dashboard' >Dashboard</Link>
+               <Link to='/Dashboard' >Dashboard</Link> 
+               <Link to='/Blog' >Q/A</Link> 
                
            </nav>
         </div>
