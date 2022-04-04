@@ -5,6 +5,8 @@ import useReview from '../../useReview/useReview';
 import HomeReview from '../HomeReview/HomeReview';
 import { Navigate, useNavigate } from 'react-router-dom';
 
+
+
 const Home = () => {
     const navigate=useNavigate()
     const [Reviews,setReviews]=useReview([])
@@ -23,7 +25,7 @@ const Home = () => {
         </div>
         <h3> Customers Review({Reviews.slice(0,3).length})</h3>
         <div className='HomeReview'>
-       
+      
           {
                 Reviews.slice(0,3).map(singelReviews=><HomeReview
                     singelReviews={singelReviews}
@@ -31,6 +33,7 @@ const Home = () => {
                 ></HomeReview>)
                 
             }
+           
         </div>
     <button onClick={()=>navigate('/Review')} className='All-Review-Btn' >All review</button>
     </>
