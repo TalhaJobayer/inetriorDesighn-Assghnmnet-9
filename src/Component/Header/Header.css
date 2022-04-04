@@ -1,0 +1,22 @@
+.menuButton{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#fffdfc 0%,#ff8a7a 100%);
+    padding: 25px;
+    
+}
+.menuButton a {
+    text-decoration: none;
+    color: #232f55;
+    font-weight: 500;
+     font-size: 20px; 
+    margin-right: 20px;
+    position: relative;
+}
+.menuButton a:hover{
+    color: red;
+}
+
+.menu2{
+    margin-right: 200px;
+}

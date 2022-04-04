@@ -1,0 +1,56 @@
+.Home_Container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.text_part{
+    width: 60%;
+    background: linear-gradient(to bottom,#fffdfc 0%,rgba(255, 138, 122,.6) 100%);
+}
+.text_part h1 {
+    font-size: 80px;
+    font-weight: 500;
+    
+    margin: 0;
+    margin-top: 100px;
+    color: #212529;
+}
+.text_part p {
+        
+        color: #232f55;
+        font-size: 20px;
+        
+    }
+
+.image_part{
+    width: 40%;
+   
+}
+.image_part img{
+    width: 100%;
+}
+.HomeReview{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: linear-gradient(to bottom,#fffdfc 0%,rgba(255, 138, 122,.6) 100%);
+    
+    
+}
+.All-Review-Btn{
+    padding: 15px 40px;
+    background-color: #ff8a7a;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    cursor: pointer;
+}
+.All-Review-Btn:hover{
+    background-color: #ff5039;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   
+}
