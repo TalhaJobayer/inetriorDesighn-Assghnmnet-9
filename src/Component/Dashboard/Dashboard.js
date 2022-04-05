@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css'
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line, ComposedChart, Area, PieChart, Pie } from 'recharts';
+import { BarChart, Bar,  XAxis, YAxis, CartesianGrid, Tooltip, Legend,  LineChart, Line, ComposedChart, Area } from 'recharts';
 
 const Dashboard = () => {
     const [chart,setChart]=useState([]);

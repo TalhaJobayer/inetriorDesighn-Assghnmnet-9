@@ -3,7 +3,7 @@ import './Home.css'
 import image from '../../image/h1_hero1.jpg.webp'
 import useReview from '../../useReview/useReview';
 import HomeReview from '../HomeReview/HomeReview';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
