@@ -1,0 +1,10 @@
+.symentic{
+    border: 1px solid lightseagreen;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 30px;
+}
+.symentic h3,h1{
+margin: 0;
+
+}
